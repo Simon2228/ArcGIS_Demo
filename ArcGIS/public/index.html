@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>Map</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.15/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.15/esri/css/esri.css">
+    <link href = "css/index.css" rel = "stylesheet" type = "text/css"/>
+    <script src="https://js.arcgis.com/3.15/"></script>
+    <script src="js/index.js"></script>
+  </head>
+
+  <body class='claro'>
+ <!--   <div data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design:'headline', gutters:false" 
+         style="width:100%;height:100%;">
+    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'right'" style="width:250px;">
+        
+    <div id="dir"></div>
+
+
+    <div id="map" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'">  -->
+
+
+
+
+<div data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="design:'headline', gutters:false" style="width:100%;height:100%;margin:0px;">
+    <div data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'">
+      <b>Click to find the service area polygon</b>
+
+      <div style="width: 400px; margin: 10px">
+        
+        <ol data-dojo-type="dijit/form/HorizontalRuleLabels"
+          data-dojo-props="
+            container: 'topDecoration',
+            style: 'height: 1.2em; font-weight: bold; margin: 0 12px;'">
+          <li>0</li>
+          <li>0:20</li>
+          <li>0:40</li>
+          <li>1:00</li>
+          <li>1:20</li>
+          <li>1:40</li>
+          <li>2:00</li>
+          <li>2:20</li>
+          <li>2:40</li>
+          <li>3:00</li>
+        </ol>
+        <div data-dojo-type="dijit/form/HorizontalRule"
+          data-dojo-props="
+            container: 'topDecoration',
+            count: 7,
+            style: 'height: 5px; margin: 0 12px;'">
+        </div>
+        <input id="hslider" value="60" type="range"
+          data-dojo-type="dijit/form/HorizontalSlider"
+          data-dojo-props="
+            minimum: 0,
+            maximum: 180,
+            showButtons: false,
+            discreteValues: 25">
+        <div style="padding-top: 10px; text-align: center;">Travel time: <strong id="decValue"></strong> seconds</div>
+      </div>
+
+    </div> 
+
+    <div id="map" dojotype="dijit/layout/ContentPane" data-dojo-props="region:'center'"></div>    
+  </div>
+
+
+  </body>
+</html>

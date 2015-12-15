@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "ArcGIS_Demo": {
+      "applicationId": "jxzLeolqv7hJymupsIeTSxz3pVrP4DHr6GyUoDnd"
+    },
+    "_default": {
+      "link": "ArcGIS_Demo"
+    }
+  }
+}
